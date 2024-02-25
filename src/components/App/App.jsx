@@ -3,6 +3,9 @@ import axios from "axios";
 import "./App.css";
 import { HashRouter, Link, Route } from "react-router-dom/cjs/react-router-dom";
 import Feedback from "./Feedback";
+import Review from "./Review";
+import Comments from "./Comments";
+import Success from "./Success";
 
 function App() {
   return (
@@ -31,6 +34,17 @@ function App() {
             message='How well are you being supported today?'
             inputMessage='support'
           />
+          <Link to='/comments'>Next</Link>
+        </Route>
+        <Route path='/comments'>
+          <Comments />
+          <Link to='/review'>Next</Link>
+        </Route>
+        <Route path='/review'>
+          <Review />
+        </Route>
+        <Route path='/success'>
+          <Success />
         </Route>
       </div>
     </HashRouter>
