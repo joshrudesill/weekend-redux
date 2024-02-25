@@ -15,6 +15,7 @@ export default function Feedback({ message, inputMessage }) {
         {inputMessage.charAt(0).toUpperCase() + inputMessage.slice(1)}
       </label>
       <input
+        data-testid='input'
         id='i'
         type='number'
         min={1}

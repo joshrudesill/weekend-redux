@@ -20,25 +20,33 @@ function App() {
             message='How are you feeling today?'
             inputMessage='feeling'
           />
-          <Link to='/understanding'>Next</Link>
+          <Link to='/understanding' data-testid='next'>
+            Next
+          </Link>
         </Route>
         <Route path='/understanding'>
           <Feedback
             message='How are you understanding today?'
             inputMessage='understanding'
           />
-          <Link to='/support'>Next</Link>
+          <Link to='/support' data-testid='next'>
+            Next
+          </Link>
         </Route>
         <Route path='/support'>
           <Feedback
             message='How well are you being supported today?'
             inputMessage='support'
           />
-          <Link to='/comments'>Next</Link>
+          <Link to='/comments' data-testid='next'>
+            Next
+          </Link>
         </Route>
         <Route path='/comments'>
           <Comments />
-          <Link to='/review'>Next</Link>
+          <Link to='/review' data-testid='next'>
+            Next
+          </Link>
         </Route>
         <Route path='/review'>
           <Review />

@@ -7,6 +7,7 @@ export default function Comments() {
     <div>
       <h1>Any other comments?</h1>
       <textarea
+        data-testid='input'
         value={feedback}
         onChange={(e) =>
           dispatch({
